@@ -23,7 +23,7 @@ const Products = () => {
         <ProductsContainer></ProductsContainer>
       </div>
       <div className="mt-10">
-        <h5 className="text-center shadow-lg w-40 text-neutral font-semibold mx-auto p-2 rounded-full">
+        <h5 className="text-center shadow-lg w-48 text-neutral font-semibold mx-auto p-2 rounded-full">
           Load More
         </h5>
       </div>

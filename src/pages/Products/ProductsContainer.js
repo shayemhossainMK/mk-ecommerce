@@ -1,12 +1,20 @@
 import React from "react";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import productImg from "../../img/productImg.png";
+import love from "../../img/love.png";
 
 const ProductsContainer = () => {
   return (
     <div className="shadow-md p-2 rounded-2xl bg-gray-200 hover:scale-105 duration-300">
-      <div>
+      <div className="relative">
+        <div className="flex items-center gap-2 absolute top-3 right-3">
+          <img src={love} alt="" />
+          <FontAwesomeIcon
+            className="text-white text-lg"
+            icon={faCartPlus}
+          ></FontAwesomeIcon>
+        </div>
         <img src={productImg} alt="" />
         <p className="text-sm font-semibold mt-1">
           Premium cotton teal panjabi with embroidered collar
