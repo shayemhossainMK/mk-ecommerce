@@ -71,7 +71,7 @@ const Navbar = () => {
           </a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal p-0 gap-8">
+          <ul class="menu menu-horizontal p-0 gap-8 flex items-center">
             <li className="border-l rounded-full overflow-hidden flex items-center h-11">
               <input
                 type="text"
@@ -85,20 +85,20 @@ const Navbar = () => {
                 ></FontAwesomeIcon>
               </div>
             </li>
-            <li className="rounded-full">
-              <div className="border border-1 rounded-full">
+            <li className=" rounded-full border border-1">
+              <div className="">
                 <img src={photo1} alt="" />
                 <p className="text-white">Track Order</p>
               </div>
             </li>
-            <li>
-              <div className="border border-1 rounded-full">
+            <li className="rounded-full border border-1">
+              <div className="">
                 <img src={photo2} alt="" />
                 <p className="text-white">Favourite</p>
               </div>
             </li>
-            <li>
-              <div className="border border-1  rounded-full">
+            <li className="rounded-full border border-1">
+              <div>
                 <FontAwesomeIcon
                   className="text-white"
                   icon={faUser}
