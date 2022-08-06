@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SubNavbar = () => {
   return (
@@ -7,6 +8,9 @@ const SubNavbar = () => {
         <p className="">Top Deals Here</p>
         <p className="border-l-2 pl-2">Moving Campaign</p>
         <p className="border-l-2 pl-2">Push Messeges</p>
+        <Link to="/fashion" className="border-l-2 pl-2">
+          Fashion
+        </Link>
       </div>
     </div>
   );

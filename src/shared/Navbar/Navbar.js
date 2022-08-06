@@ -7,6 +7,7 @@ import { faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
 import photo1 from "../../img/header-logo/photo1.png";
 import photo2 from "../../img/header-logo/photo2.png";
 import SubNavbar from "./SubNavbar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -65,10 +66,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a class="text-xl text-white">
+          <Link to="/" class="text-xl text-white">
             <img src={logo1} alt="" />
             <img src={logo2} alt="" />
-          </a>
+          </Link>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0 gap-8 flex items-center">
