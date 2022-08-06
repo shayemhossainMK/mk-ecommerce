@@ -19,10 +19,14 @@ import {
 const ProductDetails = () => {
   return (
     <div className="md:px-28  md:my-10">
-      <div className="shadow-xl rounded-2xl p-5 grid grid-cols-1  md:grid-cols-3 gap-6">
+      <div className="shadow-xl rounded-2xl p-5 grid grid-cols-1  md:grid-cols-3 gap-9">
         <div>
-          <img className="w-96 rounded-xl custom-shadow" src={photo1} alt="" />
-          <div className="flex gap-7 mt-7">
+          <img
+            className="w-96 h-96 rounded-xl custom-shadow"
+            src={photo1}
+            alt=""
+          />
+          <div className="flex gap-7 mt-8 pb-5">
             <img
               className="custom-shadow rounded-xl w-16 h-16"
               src={photo2}
@@ -49,10 +53,10 @@ const ProductDetails = () => {
           <h2 className="text-xl">
             Fabrilife Mens Premium Sports T-shirt - League
           </h2>
-          <hr className="my-3" />
+          <hr className="my-2" />
           <div className=" flex gap-5 items-center">
             <div className="flex gap-2 items-center">
-              <img className="w-4 h-4" src={blueStar} alt="" />
+              <img src={blueStar} alt="" />
               <img src={blueStar} alt="" />
               <img src={blueStar} alt="" />
               <img src={blueStar} alt="" />
@@ -60,12 +64,12 @@ const ProductDetails = () => {
             </div>
             <p className="text-xs">201 User Ratings | 30 Questions Answered</p>
           </div>
-          <h2 className="text-2xl font-bold text-red-700 mt-4">BDT 500</h2>
+          <h2 className="text-2xl font-bold text-red-700 mt-2">BDT 500</h2>
           <div className="flex gap-4 text-sm">
             <p className="line-through text-gray-300">BDT 600</p>
             <p className="text-primary">17% off</p>
           </div>
-          <div className="flex gap-4 mt-5 shadow-xl rounded-2xl p-2 bg-primary">
+          <div className="flex gap-4 mt-3 shadow-md rounded-2xl p-2 bg-primary">
             <div className="">
               <h1 className="w-24 h-20 bg-base-100 rounded-xl px-3 py-2 text-center text-2xl font-extrabold text-primary">
                 40% <br />
@@ -82,16 +86,16 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div className="flex gap-14 mt-7">
-            <p>Quantity</p>
-            <div className="flex gap-2">
-              <img src={nagetiveIcon} alt="" />
+          <div className="flex gap-14 mt-3">
+            <p className="text-sm">Quantity</p>
+            <div className="flex gap-2 items-center">
+              <img className="w-5 h-5" src={nagetiveIcon} alt="" />
               <p>01</p>
-              <img src={positiveIcon} alt="" />
+              <img className="w-5 h-5" src={positiveIcon} alt="" />
             </div>
           </div>
-          <div className="mt-3">
-            <h3>Choose Color</h3>
+          <div className="mt-1">
+            <h3 className="text-sm">Choose Color</h3>
             <div className="mt-1 flex gap-5">
               <div className="w-10 h-10 shadow-md rounded-md"></div>
               <div className="w-10 h-10 shadow-md rounded-md"></div>
@@ -99,8 +103,8 @@ const ProductDetails = () => {
               <div className="w-10 h-10 shadow-md rounded-md"></div>
             </div>
           </div>
-          <div className="mt-3">
-            <h3>Choose Size</h3>
+          <div className="mt-1">
+            <h3 className="text-sm">Choose Size</h3>
             <div className="mt-1 flex gap-5">
               <div className="w-10 h-10 shadow-md rounded-md flex justify-center items-center">
                 <p className="text-primary font-semibold">M</p>
@@ -116,7 +120,7 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 flex gap-2">
+          <div className="mt-4 flex gap-2">
             <div className="flex gap-1 items-center bg-secondary rounded-full py-1 px-1.5 text-neutral text-xs">
               <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
               <small>Add to Cart</small>
@@ -135,6 +139,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
