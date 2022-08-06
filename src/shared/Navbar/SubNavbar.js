@@ -11,6 +11,9 @@ const SubNavbar = () => {
         <Link to="/fashion" className="border-l-2 pl-2">
           Fashion
         </Link>
+        <Link to="/productdetails" className="border-l-2 pl-2">
+          Products Details
+        </Link>
       </div>
     </div>
   );

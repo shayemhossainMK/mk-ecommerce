@@ -11,7 +11,7 @@ const AllFashion = () => {
         <h1 className="text-xl font-semibold">All Fashion Products</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-10 gap-8">
-        <div className="shadow-xl rounded-2xl col-span-3 h-[800px] p-5">
+        <div className="shadow-xl rounded-2xl col-span-3 h-[790px] p-5">
           <h4 className="text-lg">Filter</h4>
           <h4 className="text-lg mt-5">Price</h4>
           <div className="mt-2">
