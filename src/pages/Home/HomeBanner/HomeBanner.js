@@ -27,7 +27,7 @@ const HomeBanner = () => {
                 class="radio radio-primary"
                 checked
               />
-              <p>Mega Campaign</p>
+              <p>Deals under 100 BDT</p>
             </div>
             <div className="flex items-center gap-2 my-4 shadow-md p-2 rounded-full">
               <input
@@ -36,7 +36,7 @@ const HomeBanner = () => {
                 class="radio radio-primary"
                 checked
               />
-              <p>Mega Campaign</p>
+              <p>Hot Deals</p>
             </div>
             <div className="flex items-center gap-2 mt-4 shadow-md p-2 rounded-full">
               <input
@@ -45,7 +45,7 @@ const HomeBanner = () => {
                 class="radio radio-primary"
                 checked
               />
-              <p>Mega Campaign</p>
+              <p>Wonder Wheel</p>
             </div>
           </div>
         </div>
