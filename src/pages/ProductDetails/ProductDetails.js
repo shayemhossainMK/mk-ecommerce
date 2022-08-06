@@ -12,9 +12,16 @@ import positiveIcon from "../../img/positiveIcon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartPlus,
+  faComment,
+  faFileCircleCheck,
+  faGear,
   faHeart,
+  faHome,
+  faLocation,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
+import map from "../../img/map.png";
+import shop1 from "../../img/shop1.png";
 
 const ProductDetails = () => {
   return (
@@ -139,7 +146,72 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="shadow-lg rounded-2xl p-2">
+          <div>
+            <img src={map} alt="" />
+            <div className=" flex gap-2 justify-evenly -mt-8">
+              <div className="flex gap-2 items-center bg-secondary y-1 px-3 rounded-full text-white text-sm">
+                <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                <p>Home</p>
+              </div>
+              <div className="flex gap-2 items-center bg-white y-1 px-3 rounded-full text-sm">
+                <FontAwesomeIcon icon={faGear}></FontAwesomeIcon>
+                <p>Office</p>
+              </div>
+              <div className="flex gap-2 items-center bg-secondary y-1 px-3 rounded-full text-white text-sm">
+                <FontAwesomeIcon icon={faLocation}></FontAwesomeIcon>
+                <p>Location</p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-5">
+            <p>
+              Delivery Address Selected:{" "}
+              <span className="text-accent text-lg uppercase font-semibold">
+                Home
+              </span>
+            </p>
+            <p className="text-sm">1001, Arabian Villa, Dhaka</p>
+            <hr className="my-1" />
+            <div className="flex mt-2">
+              <div className="px-1">
+                <h2 className="mb-1 font-semibold">Shop Information</h2>
+                <div className="flex gap-2 text-xs">
+                  <img className="border-4 w-14 h-14" src={shop1} alt="" />
+                  <div>
+                    <p>Shop Name: Fabrilife</p>
+                    <p className="my-0.5">Gulshan, Dhaka</p>
+                    <p>+88010011100</p>
+                  </div>
+                </div>
+              </div>
+              <div className="border-l-2 pl-2">
+                <div className="flex gap-2">
+                  <FontAwesomeIcon
+                    className="text-primary"
+                    icon={faFileCircleCheck}
+                  ></FontAwesomeIcon>
+                  <small className="text-xs">Verified Shop</small>
+                </div>
+                <div className="mt-4 ">
+                  <div className="flex gap-3 items-center">
+                    <p className="text-xs flex justify-center items-center border-2 p-1 text-semibold text-primary">
+                      90%
+                    </p>
+                    <p className="text-xs">Positive Review</p>
+                  </div>
+                  <div className="flex items-center gap-2 mt-2 shadow-md py-1 px-2 rounded-full">
+                    <FontAwesomeIcon
+                      className="text-primary"
+                      icon={faComment}
+                    ></FontAwesomeIcon>
+                    <p>flex gap-1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
