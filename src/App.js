@@ -19,6 +19,7 @@ function App() {
           path="/productdetails"
           element={<ProductDetails></ProductDetails>}
         >
+          <Route index element={<ProductDes></ProductDes>}></Route>
           <Route
             path="/productdetails/productdes"
             element={<ProductDes></ProductDes>}
