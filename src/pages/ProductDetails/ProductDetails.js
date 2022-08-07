@@ -22,18 +22,24 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import map from "../../img/map.png";
 import shop1 from "../../img/shop1.png";
+import bkash from "../../img/payment/photo1.png";
+import visa from "../../img/payment/photo2.png";
+import cash from "../../img/payment/photo3.png";
+import bank from "../../img/payment/photo4.png";
+import { Link, Outlet } from "react-router-dom";
+import CustomLink from "../../shared/CustomLink/CustomLink";
 
 const ProductDetails = () => {
   return (
     <div className="md:px-28  md:my-10">
-      <div className="shadow-xl rounded-2xl p-5 grid grid-cols-1  md:grid-cols-3 gap-9">
+      <div className="shadow-lg rounded-2xl p-5 grid grid-cols-1  md:grid-cols-3 gap-9">
         <div>
           <img
             className="w-96 h-96 rounded-xl custom-shadow"
             src={photo1}
             alt=""
           />
-          <div className="flex gap-7 mt-8 pb-5">
+          <div className="flex gap-7 mt-10 pb-5">
             <img
               className="custom-shadow rounded-xl w-16 h-16"
               src={photo2}
@@ -101,7 +107,7 @@ const ProductDetails = () => {
               <img className="w-5 h-5" src={positiveIcon} alt="" />
             </div>
           </div>
-          <div className="mt-1">
+          <div className="mt-2">
             <h3 className="text-sm">Choose Color</h3>
             <div className="mt-1 flex gap-5">
               <div className="w-10 h-10 shadow-md rounded-md"></div>
@@ -110,7 +116,7 @@ const ProductDetails = () => {
               <div className="w-10 h-10 shadow-md rounded-md"></div>
             </div>
           </div>
-          <div className="mt-1">
+          <div className="mt-2">
             <h3 className="text-sm">Choose Size</h3>
             <div className="mt-1 flex gap-5">
               <div className="w-10 h-10 shadow-md rounded-md flex justify-center items-center">
@@ -127,7 +133,7 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 flex gap-2">
+          <div className="mt-5 flex gap-2">
             <div className="flex gap-1 items-center bg-secondary rounded-full py-1 px-1.5 text-neutral text-xs">
               <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
               <small>Add to Cart</small>
@@ -146,9 +152,9 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-lg rounded-2xl p-2">
+        <div className="shadow-md rounded-2xl p-2 mb-5">
           <div>
-            <img src={map} alt="" />
+            <img className="h-36 w-full" src={map} alt="" />
             <div className=" flex gap-2 justify-evenly -mt-8">
               <div className="flex gap-2 items-center bg-secondary y-1 px-3 rounded-full text-white text-sm">
                 <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
@@ -200,7 +206,7 @@ const ProductDetails = () => {
                     </p>
                     <p className="text-xs">Positive Review</p>
                   </div>
-                  <div className="flex items-center gap-2 mt-2 shadow-md py-1 px-2 rounded-full">
+                  <div className="flex items-center gap-2 mt-2 shadow-sm py-1 px-2 rounded-full">
                     <FontAwesomeIcon
                       className="text-primary"
                       icon={faComment}
@@ -211,7 +217,45 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
+          <hr className="my-4" />
+          <div className="mb-5 mx-2">
+            <h4 className="text-xl">Available Payment Method</h4>
+            <div className="flex gap-2 mt-4">
+              <div className="rounded-lg shadow-lg p-2 text-center w-20">
+                <img className="w-5 mx-auto" src={bkash} alt="" />
+                <p className="text-xs mt-1">bKash</p>
+              </div>
+              <div className="w-20 shadow-lg p-1 rounded-lg  flex items-center flex-col text-center">
+                <img className="mx-auto w-8 mt-1" src={visa} alt="" />
+                <p className="text-xs mt-3">VISA</p>
+              </div>
+              <div className="w-20 shadow-lg p-1 text-center rounded-lg  flex items-center flex-col">
+                <img className="mx-auto w-4" src={cash} alt="" />
+                <p className="text-xs mt-2">Cash on delivery</p>
+              </div>
+              <div className="w-20 shadow-lg p-1 text-center rounded-lg flex items-center flex-col">
+                <img className="mx-auto w-4" src={bank} alt="" />
+                <p className="text-xs mt-2">Bank Transfer</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      {/* //2nd part start */}
+
+      <div className=" my-10 rounded-2xl shadow-xl md:pb-10 md:p-5">
+        <nav className="">
+          <div className=" flex items-center gap-10 mt-2">
+            <CustomLink className="font-semibold" to="productdes">
+              Product Description
+            </CustomLink>
+            <CustomLink className="font-semibold" to="review">
+              Review
+            </CustomLink>
+          </div>
+        </nav>
+        <Outlet></Outlet>
       </div>
     </div>
   );
