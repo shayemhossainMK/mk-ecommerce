@@ -7,7 +7,7 @@ const Header = () => {
         <p>Download App</p>
         <p className="border-l-2 border-gray-300 pl-2">Customer Care</p>
         <p className="border-l-2 border-gray-300 pl-2">Affiliate Program</p>
-        <p className="border-l-2 border-gray-300 pl-2">Language:</p>
+        <p className="border-l-2 border-gray-300 pl-2">Language: en</p>
       </div>
     </div>
   );
